@@ -1,16 +1,15 @@
 import React from 'react';
-import logo from '../../images/logo.png';
-import './Header.css'
+import './Header.css';
+import Logo from '../../images/logo.png';
 
 const Header = () => {
     return (
-        <div className="header">
-            <img src={logo} alt=""/>
-            <div className="employee">
-                <h3>Employee's Data</h3>
+        <div className="Header">
+            <div className="Logo">
+                <img src={Logo} alt="Website Logo"/>
             </div>
+            <h3>ColleagueBook</h3>
         </div>
-
     );
 };
 

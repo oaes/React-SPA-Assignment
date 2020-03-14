@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Header from './Components/Header/Header';
-import Employee from './Components/Employee/Employee';
-
+import Friends from './Components/Friends/Friends';
+import logo from './logo.svg';
 function App() {
+  
+
   return (
     <div className="App">
-      
-
-    <Header></Header>
-    <Employee></Employee>
-
-
-
-
-
-
-    </div>
+      <Header></Header>
+      <Friends></Friends>
+     </div>
   );
 }
+
+
+
 
 export default App;
