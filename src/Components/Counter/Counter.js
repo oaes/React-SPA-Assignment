@@ -1,26 +1,26 @@
 import React from 'react';
-import './Counter';
+import './Counter.css';
 import Friend from '../Friend/Friend';
 
 const Counter = (props) => {
 
    const counter = props.counter;
 
-   console.log(counter);
+//    console.log(counter);
    let totalSalary=0;
 
    for(let i=0; i<counter.length; i++){
        const person = counter[i];
-       totalSalary = totalSalary + Number(person.Salary);
+       totalSalary = totalSalary + Number(person.salary);
    }
-
+        
     return (
         <div>
             <div className="container">
             
-                <h1> + Friends</h1>
-                <p>Total Friends : {counter.length}</p>
-                <p>Total Salary  : {totalSalary}</p>
+                <h2>TotalCount:</h2>
+                <p>Total Colleagues : {counter.length}</p>
+                <p>Total Salary  : Help Needed</p>
 
                 {
                     counter.map(person=> <Friend person={person}></Friend>)

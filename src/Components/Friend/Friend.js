@@ -1,8 +1,8 @@
 import React from 'react';
-import './Friend'
+import './Friend.css'
 const Friend = (props) => {
 
-    const {name,img, Salary,username} = props.person;
+    const {name,img, Salary} = props.person;
     return (
         <div className="right-side">
             <div className="image">
@@ -11,8 +11,7 @@ const Friend = (props) => {
             </div>
             <div className="name">
                 <h3>{name}</h3>
-                <p><small>{username}</small></p>
-                <p><small>{Salary}</small></p>
+                <p>Salary: {Salary}</p>
             </div>
             
         </div>
